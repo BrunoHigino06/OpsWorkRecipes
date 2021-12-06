@@ -1,5 +1,4 @@
-execute "apt-get-update" do
-  command "apt-get update"
-  ignore_failure false
+execute "apt-get-nginx" do
+  command "apt-get nginx"
   action :nothing
 end
