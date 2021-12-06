@@ -1,4 +1,3 @@
-apt_package 'nginx' do
-  package_name                 nginx
-  action                       :install
+execute 'nginx_install' do
+  command '/usr/bin/bash apt install nginx'
 end
