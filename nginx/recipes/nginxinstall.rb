@@ -1,4 +1,4 @@
-execute "apt-get-nginx" do
-  command "apt-get nginx"
-  action :nothing
+apt_package 'nginx' do
+  package_name                 nginx
+  action                       :install
 end
